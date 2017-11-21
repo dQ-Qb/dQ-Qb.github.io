@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+
+
+		<script type="text/javascript">
+			window.onload=function(){
+				window.setInterval(changeColor,500);
+			}
+			var a=0;
+			function changeColor(){
+				
+				var color=document.getElementById("2")
+				if(a==0){
+					
+					color.style.backgroundColor="red";
+					a=1;
+					return;
+				}
+				if(a==1){
+					
+					color.style.backgroundColor="dodgerblue";
+					a=2;
+					return;
+				}
+				if(a==2){
+					
+					color.style.backgroundColor="orange";
+					a=0;
+					return;
+				}
+				
+			}
+		</script>
+		
+		<style type="text/css">
+			body{
+				background-color: gainsboro;
+			}
+			div{
+				margin: -10px;
+				width: 102%;
+				height: 70px;
+				background-color: black;
+			}
+			font{
+				font-family: "微软雅黑";
+				margin-left: 20px;
+				margin-right: 20px;
+				
+			}
+			.history{
+				font-size: 15px;
+				color: lightgray;
+				
+				
+				}
+			.history:hover{
+				color: white;
+			}
+			#home{
+				color: white;
+				font-size: 20px;
+			}
+		
+		a{
+			font-size: 20px;
+			text-decoration: none;
+			color: lightgray;
+		}
+		a:hover{
+			color: white;
+			
+		}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div id="1" >
+			<table border="0" bordercolor="blue" cellspacing="0" cellpadding="" width="100%">
+				<tr height="70">
+					<td id="home" align="left" width="90%"><font>Home</font></td>
+					<td  class="history"  align="right" width="10%" ><font>
+						
+					
+						<a href="#">History</a>
+					 </font></td>
+				</tr>
+				<tr height="600">
+					<td id=2 class="onIt" align="center" width="100%" colspan="2"  style="; color: white; background-color: dodgerblue;"><b><font size="45">Stay foolish,stay hangry!</font></b></td>
+				</tr>
+			</table>
+			
+		</div>
+	</body>
+</html>
